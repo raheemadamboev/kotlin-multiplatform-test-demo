@@ -93,7 +93,8 @@ kotlin {
     compilerOptions {
         freeCompilerArgs.addAll(
             listOf(
-                "-Xexpect-actual-classes"
+                "-Xexpect-actual-classes",
+                "-opt-in=androidx.compose.ui.test.ExperimentalTestApi"
             )
         )
     }
